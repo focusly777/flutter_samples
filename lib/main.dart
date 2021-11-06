@@ -52,7 +52,12 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Colors.black,
         title: Text('Text'),
       ),
-      body: Center(),
+      body: Center(
+        child: Image(
+          image: NetworkImage(
+              'http://image.cine21.com/resize/cine21/article/2013/0415/17_37_28__516bbc48f0ed8[W578-].jpg'),
+        ),
+      ),
     );
   }
 }
