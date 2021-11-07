@@ -50,9 +50,86 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text('Text'),
+        title: Text('유주의 명함'),
       ),
-      body: Center(),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              color: Colors.amber[200],
+              width: 300,
+              height: 60,
+              child: Center(
+                child: Text(
+                  'Yuju-Eom',
+                  style: TextStyle(
+                    fontSize: 19,
+                    color: Colors.grey[700],
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              color: Colors.white,
+              width: 300,
+              height: 10,
+            ),
+            Container(
+              color: Colors.amber[200],
+              width: 300,
+              height: 60,
+              child: Center(
+                child: Text(
+                  '+82 104822 1531',
+                  style: TextStyle(
+                    fontSize: 19,
+                    color: Colors.grey[700],
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              color: Colors.white,
+              width: 300,
+              height: 10,
+            ),
+            Container(
+              color: Colors.amber[200],
+              width: 300,
+              height: 60,
+              child: Center(
+                child: Text(
+                  'yuju@focusly.io',
+                  style: TextStyle(
+                    fontSize: 19,
+                    color: Colors.grey[700],
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              color: Colors.white,
+              width: 300,
+              height: 10,
+            ),
+            Container(
+              color: Colors.amber[200],
+              width: 300,
+              height: 60,
+              child: Center(
+                child: Text(
+                  'www.aboutuju.site',
+                  style: TextStyle(
+                    fontSize: 19,
+                    color: Colors.grey[700],
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
