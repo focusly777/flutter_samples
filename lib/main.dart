@@ -48,91 +48,29 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.grey[900],
-        title: Text('유주의 명함'),
-      ),
-      body: Center(
+      backgroundColor: Colors.amber[50],
+      body: SafeArea(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            CircleAvatar(
+              radius: 50.0,
+              backgroundImage: AssetImage('images/focusly.jpg'),
+            ),
             Text(
-              'Yuju-Eom',
-              style: TextStyle(fontSize: 19, color: Colors.grey[700]),
-            ),
-            Container(
-              color: Colors.white,
-              width: 300,
-              height: 10,
-            ),
-            Container(
-              color: Colors.amber[200],
-              width: 300,
-              height: 60,
-              child: Center(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(Icons.phone),
-                    Text(
-                      '  +82 10 4822 1531',
-                      style: TextStyle(
-                        fontSize: 19,
-                        color: Colors.grey[700],
-                      ),
-                    ),
-                  ],
-                ),
+              'Focusly Corp.',
+              style: TextStyle(
+                fontSize: 25.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.amber[600],
               ),
             ),
-            Container(
-              color: Colors.white,
-              width: 300,
-              height: 10,
-            ),
-            Container(
-              color: Colors.amber[200],
-              width: 300,
-              height: 60,
-              child: Center(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(Icons.email_outlined),
-                    Text(
-                      '  yuju@focusly.io',
-                      style: TextStyle(
-                        fontSize: 19,
-                        color: Colors.grey[700],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Container(
-              color: Colors.white,
-              width: 300,
-              height: 10,
-            ),
-            Container(
-              color: Colors.amber[200],
-              width: 300,
-              height: 60,
-              child: Center(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(Icons.home_outlined),
-                    Text(
-                      '  www.aboutuju.site',
-                      style: TextStyle(
-                        fontSize: 19,
-                        color: Colors.grey[700],
-                      ),
-                    ),
-                  ],
-                ),
+            Text(
+              '일상속 나의 텍스트를 보다 쉽게',
+              style: TextStyle(
+                fontSize: 13.0,
+                fontWeight: FontWeight.w600,
+                color: Colors.black87,
+                letterSpacing: 2,
               ),
             ),
           ],
