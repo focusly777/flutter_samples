@@ -56,6 +56,9 @@ class _MyHomePageState extends State<MyHomePage> {
               radius: 50.0,
               backgroundImage: AssetImage('images/focusly.jpg'),
             ),
+            SizedBox(
+              height: 20,
+            ),
             Text(
               'Focusly Corp.',
               style: TextStyle(
@@ -63,6 +66,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),
+            ),
+            SizedBox(
+              height: 4.5,
             ),
             Text(
               '일상속 나의 텍스트를 보다 쉽게',
@@ -73,26 +79,26 @@ class _MyHomePageState extends State<MyHomePage> {
                 letterSpacing: 2,
               ),
             ),
-            Container(
+            SizedBox(
+              height: 15,
+            ),
+            Card(
               color: Colors.white,
-              padding: EdgeInsets.all(10.0),
               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              child: Row(
-                children: [
-                  Icon(
+              child: Padding(
+                padding: EdgeInsets.all(5.0),
+                child: ListTile(
+                  leading: Icon(
                     Icons.phone,
                     size: 30,
                     color: Colors.amber[300],
                   ),
-                  SizedBox(
-                    width: 10.0,
+                  title: Text(
+                    '+ 82 508 2777 3303',
                   ),
-                  Text(
-                    '+82 508 2777 3303',
-                  ),
-                ],
+                ),
               ),
-            )
+            ),
           ],
         ),
       ),
@@ -100,4 +106,27 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
+            // Padding(
+            //   padding: const EdgeInsets.all(10.0),
+            //   child: Card(
+            //     color: Colors.white,
+            //     margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+            //     child: Padding(
+            //       padding: EdgeInsets.all(5.0),
+            //       child: ListTile(
+            //         leading: Icon(
+            //           Icons.phone,
+            //           size: 30,
+            //           color: Colors.amber[300],
+            //         ),
+            //         title: Text(
+            //           '+ 82 508 2777 3303',
+            //         ),
+            //       ),
+            //     ),
+            //   ),
+            // )
+
+
+//Card Class : https://api.flutter.dev/flutter/material/Card-class.html
 // Icon Class : https://api.flutter.dev/flutter/material/Icons-class.html
