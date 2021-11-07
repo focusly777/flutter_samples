@@ -50,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.grey[800],
-        title: Text('The Movie'),
+        title: Text('냠냠님의 어플'),
       ),
       body: Center(
         child: Image(
