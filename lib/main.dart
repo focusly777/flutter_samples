@@ -43,11 +43,45 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.black,
-          title: Text('엄유주의 명함'),
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.grey[900],
+        title: Text('엄유주의 명함'),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              color: Colors.yellow[400],
+              width: 300,
+              height: 50,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.face_sharp),
+                  Text('    엄유주'),
+                ],
+              ),
+            ),
+            Container(
+              color: Colors.white,
+              width: 300,
+              height: 10,
+            ),
+            Container(
+              color: Colors.yellow[400],
+              width: 300,
+              height: 50,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.phone),
+                  Text('+82 10 4822 1531'),
+                ],
+              ),
+            ),
+          ],
         ),
       ),
     );
