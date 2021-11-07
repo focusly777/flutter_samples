@@ -12,15 +12,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
         primarySwatch: Colors.blue,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
@@ -30,6 +21,7 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
+
   final String title;
 
   @override
@@ -41,21 +33,49 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _incrementCounter() {
     setState(() {
-      _counter++;
+      int result = 0;
+      for (int i = 1; i <= 100; i++) {
+        result = i + result;
+      }
+      _counter = result;
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.grey[800],
-        title: Text('냠냠님의 어플'),
-      ),
-      body: Center(
-        child: Image(
-          image: NetworkImage(
-              'http://image.cine21.com/resize/cine21/article/2013/0415/17_37_28__516bbc48f0ed8[W578-].jpg'),
+      body: SafeArea(
+        child: Column(
+          children: [
+            Container(
+              color: Colors.red,
+              height: 100,
+            ),
+            Container(
+              color: Colors.orange[400],
+              height: 100,
+            ),
+            Container(
+              color: Colors.yellow[400],
+              height: 100,
+            ),
+            Container(
+              color: Colors.green[400],
+              height: 100,
+            ),
+            Container(
+              color: Colors.blue[400],
+              height: 100,
+            ),
+            Container(
+              color: Colors.indigo[900],
+              height: 100,
+            ),
+            Container(
+              color: Colors.purple[900],
+              height: 100,
+            ),
+          ],
         ),
       ),
     );
