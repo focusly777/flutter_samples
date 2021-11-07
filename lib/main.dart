@@ -10,20 +10,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: '',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: ''),
     );
   }
 }
@@ -39,18 +30,13 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.amber[300],
       body: SafeArea(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircleAvatar(
               radius: 50.0,
@@ -71,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 4.5,
             ),
             Text(
-              '일상속 나의 텍스트를 보다 쉽게',
+              "세상 모든 텍스트를 보다 쉽게",
               style: TextStyle(
                 fontSize: 13.0,
                 fontWeight: FontWeight.w900,
@@ -81,6 +67,10 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             SizedBox(
               height: 15,
+              width: 150,
+              child: Divider(
+                color: Colors.white,
+              ),
             ),
             Card(
               color: Colors.white,
@@ -95,6 +85,40 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   title: Text(
                     '+ 82 508 2777 3303',
+                  ),
+                ),
+              ),
+            ),
+            Card(
+              color: Colors.white,
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              child: Padding(
+                padding: EdgeInsets.all(5.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    size: 30,
+                    color: Colors.amber[300],
+                  ),
+                  title: Text(
+                    'company@focusly.io',
+                  ),
+                ),
+              ),
+            ),
+            Card(
+              color: Colors.white,
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              child: Padding(
+                padding: EdgeInsets.all(5.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.home_filled,
+                    size: 30,
+                    color: Colors.amber[300],
+                  ),
+                  title: Text(
+                    'www.focusly.site',
                   ),
                 ),
               ),
