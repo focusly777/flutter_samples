@@ -49,24 +49,39 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.grey[900],
         title: Text('유주의 명함'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Text(
+              'Yuju-Eom',
+              style: TextStyle(fontSize: 19, color: Colors.grey[700]),
+            ),
+            Container(
+              color: Colors.white,
+              width: 300,
+              height: 10,
+            ),
             Container(
               color: Colors.amber[200],
               width: 300,
               height: 60,
               child: Center(
-                child: Text(
-                  'Yuju-Eom',
-                  style: TextStyle(
-                    fontSize: 19,
-                    color: Colors.grey[700],
-                  ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.phone),
+                    Text(
+                      '  +82 10 4822 1531',
+                      style: TextStyle(
+                        fontSize: 19,
+                        color: Colors.grey[700],
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ),
@@ -80,12 +95,18 @@ class _MyHomePageState extends State<MyHomePage> {
               width: 300,
               height: 60,
               child: Center(
-                child: Text(
-                  '+82 104822 1531',
-                  style: TextStyle(
-                    fontSize: 19,
-                    color: Colors.grey[700],
-                  ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.email_outlined),
+                    Text(
+                      '  yuju@focusly.io',
+                      style: TextStyle(
+                        fontSize: 19,
+                        color: Colors.grey[700],
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ),
@@ -99,31 +120,18 @@ class _MyHomePageState extends State<MyHomePage> {
               width: 300,
               height: 60,
               child: Center(
-                child: Text(
-                  'yuju@focusly.io',
-                  style: TextStyle(
-                    fontSize: 19,
-                    color: Colors.grey[700],
-                  ),
-                ),
-              ),
-            ),
-            Container(
-              color: Colors.white,
-              width: 300,
-              height: 10,
-            ),
-            Container(
-              color: Colors.amber[200],
-              width: 300,
-              height: 60,
-              child: Center(
-                child: Text(
-                  'www.aboutuju.site',
-                  style: TextStyle(
-                    fontSize: 19,
-                    color: Colors.grey[700],
-                  ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.home_outlined),
+                    Text(
+                      '  www.aboutuju.site',
+                      style: TextStyle(
+                        fontSize: 19,
+                        color: Colors.grey[700],
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ),
