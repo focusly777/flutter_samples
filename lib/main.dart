@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amber[50],
+      backgroundColor: Colors.amber[300],
       body: SafeArea(
         child: Column(
           children: [
@@ -61,21 +61,43 @@ class _MyHomePageState extends State<MyHomePage> {
               style: TextStyle(
                 fontSize: 25.0,
                 fontWeight: FontWeight.bold,
-                color: Colors.amber[600],
+                color: Colors.white,
               ),
             ),
             Text(
               '일상속 나의 텍스트를 보다 쉽게',
               style: TextStyle(
                 fontSize: 13.0,
-                fontWeight: FontWeight.w600,
-                color: Colors.black87,
+                fontWeight: FontWeight.w900,
+                color: Colors.white70,
                 letterSpacing: 2,
               ),
             ),
+            Container(
+              color: Colors.white,
+              padding: EdgeInsets.all(10.0),
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.phone,
+                    size: 30,
+                    color: Colors.amber[300],
+                  ),
+                  SizedBox(
+                    width: 10.0,
+                  ),
+                  Text(
+                    '+82 508 2777 3303',
+                  ),
+                ],
+              ),
+            )
           ],
         ),
       ),
     );
   }
 }
+
+// Icon Class : https://api.flutter.dev/flutter/material/Icons-class.html
