@@ -43,39 +43,11 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SafeArea(
-        child: Column(
-          children: [
-            Container(
-              color: Colors.red,
-              height: 100,
-            ),
-            Container(
-              color: Colors.orange[400],
-              height: 100,
-            ),
-            Container(
-              color: Colors.yellow[400],
-              height: 100,
-            ),
-            Container(
-              color: Colors.green[400],
-              height: 100,
-            ),
-            Container(
-              color: Colors.blue[400],
-              height: 100,
-            ),
-            Container(
-              color: Colors.indigo[900],
-              height: 100,
-            ),
-            Container(
-              color: Colors.purple[900],
-              height: 100,
-            ),
-          ],
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.black,
+          title: Text('엄유주의 명함'),
         ),
       ),
     );
