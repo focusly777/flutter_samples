@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 void main() {
   runApp(const MyApp());
@@ -36,91 +37,82 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: Colors.amber[300],
       body: SafeArea(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CircleAvatar(
-              radius: 50.0,
-              backgroundImage: AssetImage('images/focusly.jpg'),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            Text(
-              'Focusly Corp.',
-              style: TextStyle(
-                fontSize: 25.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
+            Expanded(
+              child: FlatButton(
+                onPressed: () {
+                  final player = AudioCache();
+                  player.play('note1.wav');
+                },
+                minWidth: 500,
+                child: Text('Click Me'),
+                color: Colors.red[400],
               ),
             ),
-            SizedBox(
-              height: 4.5,
-            ),
-            Text(
-              "세상 모든 텍스트를 보다 쉽게",
-              style: TextStyle(
-                fontSize: 13.0,
-                fontWeight: FontWeight.w900,
-                color: Colors.white70,
-                letterSpacing: 2,
+            Expanded(
+              child: FlatButton(
+                onPressed: () {
+                  final player = AudioCache();
+                  player.play('note2.wav');
+                },
+                minWidth: 500,
+                child: Text('Click Me'),
+                color: Colors.orange[400],
               ),
             ),
-            SizedBox(
-              height: 15,
-              width: 150,
-              child: Divider(
-                color: Colors.white,
+            Expanded(
+              child: FlatButton(
+                onPressed: () {
+                  final player = AudioCache();
+                  player.play('note3.wav');
+                },
+                minWidth: 500,
+                child: Text('Click Me'),
+                color: Colors.yellow[400],
               ),
             ),
-            Card(
-              color: Colors.white,
-              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              child: Padding(
-                padding: EdgeInsets.all(5.0),
-                child: ListTile(
-                  leading: Icon(
-                    Icons.phone,
-                    size: 30,
-                    color: Colors.amber[300],
-                  ),
-                  title: Text(
-                    '+ 82 508 2777 3303',
-                  ),
-                ),
+            Expanded(
+              child: FlatButton(
+                onPressed: () {
+                  final player = AudioCache();
+                  player.play('note4.wav');
+                },
+                minWidth: 500,
+                child: Text('Click Me'),
+                color: Colors.green[400],
               ),
             ),
-            Card(
-              color: Colors.white,
-              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              child: Padding(
-                padding: EdgeInsets.all(5.0),
-                child: ListTile(
-                  leading: Icon(
-                    Icons.email,
-                    size: 30,
-                    color: Colors.amber[300],
-                  ),
-                  title: Text(
-                    'company@focusly.io',
-                  ),
-                ),
+            Expanded(
+              child: FlatButton(
+                onPressed: () {
+                  final player = AudioCache();
+                  player.play('note5.wav');
+                },
+                minWidth: 500,
+                child: Text('Click Me'),
+                color: Colors.blue[400],
               ),
             ),
-            Card(
-              color: Colors.white,
-              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              child: Padding(
-                padding: EdgeInsets.all(5.0),
-                child: ListTile(
-                  leading: Icon(
-                    Icons.home_filled,
-                    size: 30,
-                    color: Colors.amber[300],
-                  ),
-                  title: Text(
-                    'www.focusly.site',
-                  ),
-                ),
+            Expanded(
+              child: FlatButton(
+                onPressed: () {
+                  final player = AudioCache();
+                  player.play('note6.wav');
+                },
+                minWidth: 500,
+                child: Text('Click Me'),
+                color: Colors.indigo[800],
+              ),
+            ),
+            Expanded(
+              child: FlatButton(
+                onPressed: () {
+                  final player = AudioCache();
+                  player.play('note7.wav');
+                },
+                minWidth: 500,
+                child: Text('Click Me'),
+                color: Colors.purple[800],
               ),
             ),
           ],
@@ -130,27 +122,26 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-            // Padding(
-            //   padding: const EdgeInsets.all(10.0),
-            //   child: Card(
-            //     color: Colors.white,
-            //     margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-            //     child: Padding(
-            //       padding: EdgeInsets.all(5.0),
-            //       child: ListTile(
-            //         leading: Icon(
-            //           Icons.phone,
-            //           size: 30,
-            //           color: Colors.amber[300],
-            //         ),
-            //         title: Text(
-            //           '+ 82 508 2777 3303',
-            //         ),
-            //       ),
-            //     ),
-            //   ),
-            // )
-
+// Padding(
+//   padding: const EdgeInsets.all(10.0),
+//   child: Card(
+//     color: Colors.white,
+//     margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+//     child: Padding(
+//       padding: EdgeInsets.all(5.0),
+//       child: ListTile(
+//         leading: Icon(
+//           Icons.phone,
+//           size: 30,
+//           color: Colors.amber[300],
+//         ),
+//         title: Text(
+//           '+ 82 508 2777 3303',
+//         ),
+//       ),
+//     ),
+//   ),
+// )
 
 //Card Class : https://api.flutter.dev/flutter/material/Card-class.html
 // Icon Class : https://api.flutter.dev/flutter/material/Icons-class.html
